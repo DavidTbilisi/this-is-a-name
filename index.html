@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework – CSS Display Properties</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <h1>CSS Display Properties</h1>
+    <p class="subtitle">Fix the broken layouts below. Each section describes what the result should look like — your job is to figure out which display value (and any other needed rules) makes it happen.</p>
+
+    <hr />
+
+    <!-- TASK 1 -->
+    <section>
+      <h2>Task 1 — Observe Normal Flow</h2>
+      <p class="task-desc">No changes needed. Study the output and answer the questions in the comments inside <code>style.css</code> → Task 1.</p>
+
+      <div class="demo">
+        <div class="t1-block">DIV one</div>
+        <div class="t1-block">DIV two</div>
+        <span class="t1-inline">span A</span>
+        <span class="t1-inline">span B</span>
+        <span class="t1-inline">span C</span>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- TASK 2 -->
+    <section>
+      <h2>Task 2 — Broken Navigation</h2>
+      <p class="task-desc">
+        The navigation links below are stacking vertically. They should all sit on <strong>one horizontal line</strong>, each with equal width and centered text. Fix it using only the <code>.t2-link</code> rule — do not change the HTML.
+      </p>
+      <p class="task-desc warning">Extra challenge: after you fix it, explain in a comment why setting <code>width</code> alone on the links did not work before your fix.</p>
+
+      <div class="demo">
+        <nav class="t2-nav">
+          <a class="t2-link" href="#">Home</a>
+          <a class="t2-link" href="#">Projects</a>
+          <a class="t2-link" href="#">Blog</a>
+          <a class="t2-link" href="#">Contact</a>
+        </nav>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- TASK 3 -->
+    <section>
+      <h2>Task 3 — Tags That Won't Cooperate</h2>
+      <p class="task-desc">
+        These category tags are block-level elements. Make them flow inline so they sit side by side. However, there is a catch: once they are inline, the <code>padding-top</code> and <code>padding-bottom</code> you see in the CSS will stop working. Fix that too — without switching to flexbox or grid.
+      </p>
+
+      <div class="demo">
+        <div class="t3-tag">HTML</div>
+        <div class="t3-tag">CSS</div>
+        <div class="t3-tag">JavaScript</div>
+        <div class="t3-tag">Accessibility</div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- TASK 4 -->
+    <section>
+      <h2>Task 4 — Invisible Ghost Space</h2>
+      <p class="task-desc">
+        The three boxes below use <code>display: inline-block</code>. They look correct, but there are small mysterious gaps between them that the developer cannot explain. Find out what causes the gaps and remove them using <strong>only CSS</strong> (no changes to HTML).
+      </p>
+      <p class="task-desc warning">Hint: the answer has nothing to do with <code>margin</code> or <code>padding</code>.</p>
+
+      <div class="demo t4-container">
+        <div class="t4-box">Box 1</div>
+        <div class="t4-box">Box 2</div>
+        <div class="t4-box">Box 3</div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- TASK 5 -->
+    <section>
+      <h2>Task 5 — Hide Without a Trace vs. Hide in Place</h2>
+      <p class="task-desc">
+        There are two elements below: <code>.t5-gone</code> and <code>.t5-ghost</code>.
+      </p>
+      <ul class="task-desc">
+        <li>Make <code>.t5-gone</code> disappear <strong>and</strong> collapse its space so the surrounding text closes up.</li>
+        <li>Make <code>.t5-ghost</code> disappear <strong>but keep its space</strong> so the layout does not shift.</li>
+      </ul>
+      <p class="task-desc">Use a different CSS property/value pair for each. Write a comment explaining the difference.</p>
+
+      <div class="demo">
+        <p>Before — <span class="t5-gone">[remove me from flow]</span> — After</p>
+        <p>Before — <span class="t5-ghost">[hide me, keep my space]</span> — After</p>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- TASK 6 -->
+    <section>
+      <h2>Task 6 — Build a Card Row from Scratch</h2>
+      <p class="task-desc">
+        The cards below are unstyled. Write CSS from scratch for <code>.t6-row</code> and <code>.t6-card</code> to achieve this layout:
+      </p>
+      <ul class="task-desc">
+        <li>Cards sit side by side horizontally.</li>
+        <li>Each card is exactly <strong>180px wide</strong>.</li>
+        <li>Cards align to the top when their content heights differ.</li>
+        <li>Do <strong>not</strong> use flexbox or grid — use only display properties from this homework.</li>
+      </ul>
+      <p class="task-desc warning">The <code>.t6-card h3</code> must remain block-level. The <code>.t6-meta</code> spans must sit on the same line as each other. Style those too.</p>
+
+      <div class="demo">
+        <div class="t6-row">
+
+          <div class="t6-card">
+            <h3>Alice</h3>
+            <span class="t6-meta">Designer</span>
+            <span class="t6-meta">Senior</span>
+            <p>Loves typography and color theory. Has been in the industry for over a decade.</p>
+          </div>
+
+          <div class="t6-card">
+            <h3>Bob</h3>
+            <span class="t6-meta">Developer</span>
+            <span class="t6-meta">Junior</span>
+            <p>Building his first React app.</p>
+          </div>
+          
+          <div class="t6-card">
+            <h3>Carol</h3>
+            <span class="t6-meta">Manager</span>
+            <span class="t6-meta">Lead</span>
+            <p>Coordinates cross-functional teams across three time zones.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- TASK 7 — BONUS -->
+    <section>
+      <h2>Task 7 — Bonus: Display Table Layout</h2>
+      <p class="task-desc">
+        Recreate a two-column layout (label on the left, value on the right) using <code>display: table</code>, <code>display: table-row</code>, and <code>display: table-cell</code> — without using an actual <code>&lt;table&gt;</code> element. The label column should be exactly 120px wide. Both columns should align to the top.
+      </p>
+
+      <div class="demo">
+        <div class="t7-table">
+          <div class="t7-row">
+            <div class="t7-label">Name</div>
+            <div class="t7-value">Alice Johnson</div>
+          </div>
+          <div class="t7-row">
+            <div class="t7-label">Role</div>
+            <div class="t7-value">Senior Product Designer at a mid-size fintech startup</div>
+          </div>
+          <div class="t7-row">
+            <div class="t7-label">Location</div>
+            <div class="t7-value">Tbilisi, Georgia</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>

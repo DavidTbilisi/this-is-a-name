@@ -1,0 +1,231 @@
+/* ================================================
+   Homework — CSS Display Properties
+   Do not change anything marked DO NOT TOUCH.
+   Write your CSS only where instructed.
+================================================ */
+
+/* ---- DO NOT TOUCH: base styles ---- */
+body {
+  font-family: monospace;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  color: #111;
+  background: #fff;
+}
+
+h1 { font-size: 1.4rem; margin-bottom: 0.25rem; }
+h2 { font-size: 1rem; margin: 0 0 0.5rem; }
+
+.subtitle {
+  color: #555;
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+hr { border: none; border-top: 1px solid #ddd; margin: 2rem 0; }
+
+section { margin-bottom: 0.5rem; }
+
+.task-desc {
+  font-size: 0.88rem;
+  margin: 0.4rem 0;
+  line-height: 1.6;
+}
+
+.task-desc.warning {
+  color: #b00;
+}
+
+.task-desc li { margin-left: 1.2rem; }
+
+.demo {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin-top: 12px;
+  background: #fafafa;
+}
+/* ---- END DO NOT TOUCH ---- */
+
+
+/* ================================================
+   TASK 1 — Observe Normal Flow
+   No CSS to write here.
+   Answer these questions as comments:
+     Q1: Why does each .t1-block start on a new line?
+     Q2: Why do the .t1-inline spans sit side by side?
+     Q3: What does "normal flow" mean?
+================================================ */
+
+/* YOUR ANSWERS:
+   Q1:
+   Q2:
+   Q3:
+*/
+
+.t1-block {
+  background: #eee;
+  padding: 6px 10px;
+  margin-bottom: 4px;
+}
+
+.t1-inline {
+  background: #ddd;
+  padding: 2px 8px;
+}
+
+
+/* ================================================
+   TASK 2 — Broken Navigation
+   Fix .t2-link so the links are horizontal,
+   equal-width, and have centered text.
+   Explain in a comment why width did not work before.
+================================================ */
+
+/* YOUR EXPLANATION: */
+
+.t2-nav {
+  background: #111;
+  padding: 4px;
+}
+
+.t2-link {
+  color: #fff;
+  text-decoration: none;
+  width: 100px;
+  text-align: center;
+  padding: 8px 0;
+
+  /* TODO: one property fixes everything — add it here */
+}
+
+
+/* ================================================
+   TASK 3 — Tags That Won't Cooperate
+   Make .t3-tag elements flow inline AND keep
+   vertical padding working. One display value
+   will break padding; choose a better one.
+================================================ */
+
+.t3-tag {
+  background: #111;
+  color: #fff;
+  padding: 6px 12px; /* vertical padding must stay visible */
+  margin: 0 4px 4px 0;
+  font-size: 0.8rem;
+
+  /* TODO: add display here — but choose carefully */
+}
+
+
+/* ================================================
+   TASK 4 — Invisible Ghost Space
+   The gaps between .t4-box elements are NOT
+   caused by margin or padding.
+   Find the real cause and fix it with CSS only.
+   Write the cause as a comment.
+================================================ */
+
+/* YOUR EXPLANATION OF THE CAUSE: */
+
+.t4-container {
+  background: #eee;
+  /* TODO: you may need to add a rule here */
+  font-size: 0;
+}
+
+.t4-box {
+  display: inline-block;
+  width: 100px;
+  height: 60px;
+  background: #111;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+  font-size: 0.85rem;
+  /* TODO: you may need to add a rule here too */
+}
+
+
+/* ================================================
+   TASK 5 — Hide Without a Trace vs. Hide in Place
+   .t5-gone  → disappears AND collapses its space
+   .t5-ghost → disappears BUT keeps its space
+   Use different property/value pairs for each.
+   Write a comment explaining the difference.
+================================================ */
+
+/* YOUR EXPLANATION: */
+
+.t5-gone {
+  background: #fcc;
+  padding: 0 6px;
+  /* TODO */
+  display: none;
+}
+
+.t5-ghost {
+  background: #ccf;
+  padding: 0 6px;
+  /* TODO */
+  visibility: hidden;
+}
+
+
+/* ================================================
+   TASK 6 — Build a Card Row from Scratch
+   Write all rules for .t6-row, .t6-card,
+   .t6-card h3, and .t6-meta from scratch.
+   Requirements:
+     - cards side by side, 180px wide each
+     - cards align to the top
+     - no flexbox, no grid
+     - h3 stays block-level
+     - .t6-meta spans sit on the same line
+================================================ */
+
+.t6-row {
+  /* TODO */
+}
+
+.t6-card {
+  /* TODO */
+}
+
+.t6-card h3 {
+  /* TODO */
+}
+
+.t6-meta {
+  /* TODO */
+}
+
+/* feel free to add more rules below if needed */
+
+
+/* ================================================
+   TASK 7 (BONUS) — Display Table Layout
+   Use display: table / table-row / table-cell
+   to create a two-column layout.
+   Rules: label column = 120px, both columns top-aligned.
+   Do not touch the HTML.
+================================================ */
+
+.t7-table {
+  /* TODO */
+}
+
+.t7-row {
+  /* TODO */
+}
+
+.t7-label {
+  color: #555;
+  font-size: 0.85rem;
+  /* TODO */
+}
+
+.t7-value {
+  font-size: 0.85rem;
+  /* TODO */
+}
